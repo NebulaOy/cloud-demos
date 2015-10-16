@@ -7,7 +7,7 @@ parameters:
   key_name:
     type: string
     label: Key name
-    default: admin
+    default: demokey
     description: Name of key-pair to be used for compute instance
   instance_flavor:
     type: string
