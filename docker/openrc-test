@@ -1,0 +1,18 @@
+#!/bin/bash
+
+unset OS_USERNAME
+unset OS_PASSWORD
+unset OS_TENANT_NAME
+
+echo -n "Enter OS_USERNAME: "
+read USERNAME
+echo "Enter OS_PASSWORD: "
+read -s PASSWORD
+echo -n "Enter OS_TENANT_NAME: "
+read TENANT_NAME
+
+export OS_USERNAME="${USERNAME}"
+export OS_PASSWORD="${PASSWORD}"
+export OS_TENANT_NAME="${TENANT_NAME}"
+export OS_REGION_NAME="${REGION}"
+export OS_AUTH_URL="${AUTH_URL}"
