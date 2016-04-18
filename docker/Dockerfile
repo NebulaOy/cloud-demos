@@ -1,6 +1,6 @@
 FROM centos:centos7
 MAINTAINER Jura Berg <jura.berg@nebula.fi>
-RUN yum install -y https://repos.fedorapeople.org/repos/openstack/openstack-juno/rdo-release-juno-1.noarch.rpm && yum install -y epel-release
+RUN yum install -y https://repos.fedorapeople.org/repos/openstack/openstack-kilo/rdo-release-kilo-1.noarch.rpm && yum install -y epel-release
 RUN yum install -y python-novaclient \
     python-neutronclient \
     python-heatclient \
