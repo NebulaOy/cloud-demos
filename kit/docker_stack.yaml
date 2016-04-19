@@ -66,4 +66,10 @@ resources:
 outputs:
   db_password:
     value: { get_attr: [database_password, value] } 
+  website_url:
+    value:
+      str_replace:
+        template: http://host/wordpress/
+        params:
+          host: { get_attr: [floating_ip, floating_ip_address] }
             
